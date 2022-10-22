@@ -1,0 +1,148 @@
+.feature__tittle {
+  text-align: center;
+  font-weight: 600;
+  opacity: 0.9;
+  color: var(--dark-grayish-blue);
+  line-height: 2rem;
+}
+
+.feature__text {
+  font-weight: 300;
+  line-height: 1.6rem;
+  text-align: center;
+  color: var(--grayish-blue);
+  opacity: 0.8;
+}
+
+.feature__tittle--l {
+  font-size: clamp(1.875rem, 1.6329rem + 1.0329vw, 2.5625rem);
+  padding-bottom: 16px;
+  min-width: 330px;
+}
+
+.feature__text--l {
+  font-size: clamp(0.9rem, 0.8208rem + 0.338vw, 1.125rem);
+}
+
+.feature__tittle--m {
+  font-size: clamp(1.625rem, 1.4489rem + 0.7512vw, 2.125rem);
+  padding-bottom: 18px;
+}
+
+.feature__text--m {
+  font-size: clamp(0.875rem, 0.809rem + 0.2817vw, 1.0625rem);
+}
+
+.feature__tittle--s-aside {
+  font-size: 1.375rem;
+  padding-bottom: 8px;
+}
+
+.feature__tittle--s-workflow {
+  font-size: 1.375rem;
+  padding-bottom: 16px;
+}
+
+.feature__text--s {
+  font-size: 16px;
+}
+
+.container__mobile {
+  align-self: center;
+  max-width: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 2.6rem;
+}
+
+.container__desktop {
+  align-self: center;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature__container--companies {
+  margin-top: 8rem;
+  margin-bottom: 10.1rem;
+  gap: 3.7rem;
+}
+
+.feature__container--snippets {
+  margin: 0 auto 2.8rem;
+}
+
+.feature__icon {
+  margin-bottom: 2.6rem;
+}
+
+.feature__icon--blacklist {
+  margin-bottom: 2.1rem;
+}
+
+.custom__padding {
+  padding-bottom: 1.6rem;
+}
+
+.custom__margin {
+  margin-bottom: 4.7rem;
+}
+
+@media screen and (min-width: 790px) {
+  .container__desktop--l {
+    max-width: 693px;
+  }
+
+  .feature__tittle--l {
+    padding-bottom: 26px;
+  }
+
+  .container__desktop--m {
+    max-width: 455px;
+  }
+
+  .feature__container--companies {
+    flex-direction: row;
+    max-width: 100vw;
+    justify-content: center;
+    gap: 8.5%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container__desktop--s {
+    max-width: 350px;
+    margin: 0 0 2.6rem 2.075rem;
+    gap: 2rem;
+  }
+
+  .container__desktop--row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100vw;
+  }
+  
+  .container__desktop--row:nth-last-child(2) {
+    justify-content: center;    
+  }
+
+  .feature__tittle--s-aside {
+    text-align: left;
+  }
+
+  .feature__text--s {
+    text-align: left;
+  }
+  section .feature__text--s:nth-child(-n + 3) {
+    text-align: center;
+  }
+
+  section .container__desktop--row .container__mobile:nth-child(-n + 3) {
+    align-self: initial;
+    margin: 0 1.5rem 2.6rem;
+
+  }
+}
